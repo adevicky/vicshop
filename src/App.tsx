@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, ReactNode } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Index from './Component/Index';
+import NotFound from './Pages/NotFound';
+import Shop from './Component/Shop';
+import "./Css/App.scss";
 
-function App() {
+class App extends React.Component <any> {
+
+constructor(props){
+super(props);
+this.state = {
+message: '',
+}
+}
+
+componentDidMount(){
+
+}
+
+render(): ReactNode {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+    <Fragment>
+    <Routes>
+   <Route path="/" element={<Index />}></Route>
+   <Route path="/index" element={<Index />}></Route>
+    <Route path="/shop" element={<Shop />}></Route>
+   <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+        </Fragment>
+   </BrowserRouter>
+   </div>
+    </>
+   );
+  }
 }
 
 export default App;

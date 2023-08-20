@@ -1,7 +1,8 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState, useEffect } from 'react';
 import Cart from "../Assets/Cart.png";
-export default class Header extends React.Component <any> {
 
+
+export default class Header extends React.Component <any> {
 constructor(props){
 super(props);
 this.state = {
@@ -10,7 +11,7 @@ message: '',
 }
 
 componentDidMount(){
-
+    
 }
 
 render(): ReactNode {
@@ -77,7 +78,7 @@ render(): ReactNode {
                     <a href="/contact.html" title="Adenuga Victoria-Contact" className="nav-link">Delivery</a>
                 </li>
                 <li>
-                    <input type="text" placeholder="Search..." />
+                    <input type="text" placeholder=" Search..." />
                 </li>
                 <li>
                     <a href="#"> <i className="fa fa-user"></i> Account

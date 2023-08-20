@@ -1,11 +1,17 @@
 import React, { ReactNode } from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../Component/Header';
+import Footer from '../Component/Footer';
 import Shop from '../Component/Shop';
 import Homepage from '../Component/Homepage';
 import Category from '../Component/Category';
-import Brand from './Brand';
-import Bonus from './Bonus';
+import Brand from '../Component/Brand';
+import Bonus from '../Component/Bonus';
+import Deals from '../Component/Deals';
+import Store from '../Component/Store';
+import Product from '../Component/Product';
+import Sale from '../Component/Sale';
+import Service from '../Component/Service';
+
 
 class Index extends React.Component <any> {
 
@@ -29,9 +35,13 @@ render(): ReactNode {
     <Homepage />
     <Category />
     <Shop />
-    <Brand/>
-    <Bonus/>
-
+    <Brand />
+    <Bonus />
+    <Deals />
+    <Product />
+    <Store />
+    <Sale />
+    <Service />
     <Footer />
    
     </>

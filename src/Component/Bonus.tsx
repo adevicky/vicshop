@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import Accessories13 from '../Assets/accessories (13).png';
-import Best1 from '../Assets/Best (1).png';
-import Best2 from '../Assets/Best (2).png';
+import Best1 from '../Assets/accessories (9).png';
+import Best2 from '../Assets/accessories (6).png';
 import Best3 from '../Assets/Best (3).png';
 import Best5 from '../Assets/Best (5).png';
 import Laptop from '../Assets/laptop (6).png';
@@ -106,7 +106,7 @@ render(): ReactNode {
 <section className="shop-page">
     <div className="container">
     <div className="shop-category">
-        <h3>todays best deals for you!</h3>
+        <h3>weekly products for you!</h3>
         <div className="best-grid">
             <div className="best-img-wrapper">
                 <div className="zoom-effect">

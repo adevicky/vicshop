@@ -1,7 +1,6 @@
-import React, { ReactNode, useState, useEffect } from 'react';
+import React, { ReactNode } from 'react';
 import Cart from "../Assets/Cart.png";
-
-
+import $ from 'jquery';
 export default class Header extends React.Component <any> {
 constructor(props){
 super(props);
@@ -11,13 +10,36 @@ message: '',
 }
 
 componentDidMount(){
-    
-}
+$(function () {
+        $('.mobile-nav').click(function () {
+            $('.mobile-menu').toggleClass('active');
+            $('body').toggleClass('no-scroll');
+        });
+    });
+
+
+$(document).on("scroll", function () {
+        var reveals = $(".reveal")
+        var elementTop = $(document).scrollTop();
+        var elementBottom = elementTop + $(window).height();
+
+        for (var i = 0; i < reveals.length; i++) {
+        var reveal = reveals[i];
+
+        if ($(reveal).position().top < elementBottom) {
+            $(reveal).addClass("visible");
+        } else {
+             $(reveal).removeClass("visible");
+        }
+            }
+        }); 
+} 
 
 render(): ReactNode {
   return (
     <>
-    
+    <header>
+        <nav>
     <div className="wrapper">
    <div className="first-heading">
     <ul id="first-nav">
@@ -50,7 +72,7 @@ render(): ReactNode {
     </ul>
     </div>
    </div>
-  <header className="header">
+  </nav>
     <nav className="navbar">
         <div className="logo">
         <a href="#" className="nav-logo"> <img src={Cart} alt="" /> Shopcart</a>

@@ -14,15 +14,14 @@ message: '',
 }
 
 componentDidMount(){
-
 }
 
 render(): ReactNode {
   return (
     <>
    <section className="homepage-page">
-    <div className="homepage ">  
-<div className="homepage-text">
+    <div className="homepage">  
+<div className="homepage-text reveal fade-left">
     <h1>Shopping and Department Store.</h1>
     <p>Shopping is a bit of a relaxing hobby for me, which is sometimes troubling for the bank balance.</p>
     <div className="cash-btn">

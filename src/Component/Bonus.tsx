@@ -29,7 +29,7 @@ render(): ReactNode {
 
 
 <section className="bonus">
-<div className="container bonus-page">
+<div className="container reveal fade-left bonus-page">
     <h3>Get Up to 50% Off </h3>
     <div className="bonus-wrapper-grid">
         <div>
@@ -104,7 +104,7 @@ render(): ReactNode {
 </section>
 
 <section className="shop-page">
-    <div className="container">
+    <div className="container reveal fade-right">
     <div className="shop-category">
         <h3>weekly products for you!</h3>
         <div className="best-grid">
@@ -220,9 +220,9 @@ render(): ReactNode {
         </div>
     </div>
 </section>
-<section className="cash">
+<section className="cash-section-page">
 <div className="cash-page">
-    <div className="cash-wrapper">
+    <div className="cash-wrapper reveal fade-bottom ">
         <div className="cash-txt">
             <h3>Get 5% Cash Back On $200</h3>
             <p>Shopping is a bit of a relaxing hobby for me, which is sometimes troubling for the bank balance.

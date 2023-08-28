@@ -30,7 +30,7 @@ render(): ReactNode {
     <>
 
 <section className="brand">
-<div className="container brand-page">
+<div className="container reveal fade-right brand-page">
     <h3>Choose you brand!</h3>
 <div className="wrapper-brand">
     <div className="row">

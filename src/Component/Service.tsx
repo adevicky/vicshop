@@ -20,7 +20,7 @@ render(): ReactNode {
   return (
     <>
 <section id="service">
-    <div className="container service-page">
+    <div className="container reveal fade-bottom   service-page">
         <h3>Services To Help You Shop </h3>
         <div className="service-wrapper-grid">
             <div>

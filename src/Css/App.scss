@@ -29,6 +29,17 @@ body {
 a {
   text-decoration: none;
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+}
+section {
+  padding: 50px 0px;
+}
 .wrapper .first-heading {
   text-align: center;
   padding: 5px 20px;
@@ -232,7 +243,62 @@ h3 {
 .no-scroll {
   overflow: hidden;
 }
+.reveal {
+  position: relative;
+  opacity: 0;
+}
 
+.reveal.visible {
+  opacity: 1;
+}
+
+.visible.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+.visible.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+.visible.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 1320px) {
   .nav-menu {
     display: none;
@@ -352,6 +418,7 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 50vh;
 }
 
 .homepage-text {
@@ -395,10 +462,6 @@ h3 {
   cursor: pointer;
 }
 
-.shop-category {
-  margin-top: 40px;
-}
-
 .shop-category h3 {
   font-size: 30px;
   text-transform: capitalize;
@@ -411,9 +474,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
 }
-.category {
-  margin-top: 30px;
-}
+
 .category-img-wrapper img {
   border-radius: 10px;
   width: 100%;
@@ -499,15 +560,11 @@ h3 {
   border: hidden;
   cursor: pointer;
 }
-
-
-
 .wrappers .img-wrapper {
   display: inline-block;
   position: relative;
   padding: 10px 20px;
 }
-
 .wrappers .img-wrapper img {
   height: 260px;
   width: 260px;
@@ -598,7 +655,6 @@ h3 {
   padding: 0.2rem 0.8rem;
 }
 .bonus {
-  margin-top: 40px;
 
 .bonus-page p {
   margin-bottom: 4px;
@@ -696,19 +752,17 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 70vh;
   max-width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
-}
 
-.cash-txt {
-  text-align: left;
-  color: #fff;
-}
+  .cash-page p {
+    line-height: 1.5;
+  }
 
-.cash-page .cash-wrapper {
+ .cash-wrapper {
   margin: 40px auto;
   padding: 40px;
   background-color: var(--branding-color-1);
@@ -717,12 +771,6 @@ h3 {
   justify-items: right;
   justify-self: right !important;
 }
-
-.cash-wrapper h3 {
-  font-size: 48px;
-  font-weight: bold;
-}
-
 .cash-wrapper a {
   text-decoration: none;
   color: #fff;
@@ -732,16 +780,20 @@ h3 {
   border-radius: 30px;
   transition: all 0.3ms ease-in-out;
 }
-
+.cash-wrapper h3 {
+  font-size: 48px;
+  font-weight: bold;
+}
 .cash-wrapper a:hover {
   background-color: #000;
   border: #000;
 }
-
-.cash-page p {
-  line-height: 1.5;
 }
 
+.cash-txt {
+  text-align: left;
+  color: #fff;
+}
 .cash-btn {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -784,10 +836,6 @@ border-radius: 10px;
   color: #fff;
 }
 
-.cash {
-  background-color: #ffd;
-  width: 100%;
-}
 #get-section-page {
   margin-top: 30px;
 }

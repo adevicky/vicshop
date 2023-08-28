@@ -23,7 +23,7 @@ render(): ReactNode {
   return (
     <>
 <section className="shop-page">
-    <div className="container">
+    <div className="container reveal fade-bottom">
     <div className="shop-category">
         <h3>todays best deals for you!</h3>
         <div className="best-grid">

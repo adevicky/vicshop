@@ -29,7 +29,7 @@ render(): ReactNode {
   return (
     <>
 <section className="deals-page">
-<div className="container deals">
+<div className="container reveal fade-bottom  deals">
     <h3>todays best deals for you!</h3>
     <div className="deal-grid">
         <div className="deal-wrapper">
@@ -46,7 +46,7 @@ render(): ReactNode {
     </div>   
     </section>
     <section className="shop">
-    <div className="container shop-category"> 
+    <div className="container reveal fade-left shop-category"> 
         <div className="deal-grid-wrapper">
             <div className="deal-img-wrapper">
                 <div className="zoom-effect">
@@ -162,7 +162,7 @@ render(): ReactNode {
 </section>
 <section id="get-section-page">
     <div className="get-page">
-            <div className="get-grid">
+            <div className="get-grid reveal fade-right">
                 <div>
                 <div className="cash-txt">
                     <h3>Get 5% Cash Back</h3>
@@ -179,7 +179,7 @@ render(): ReactNode {
     </div>
         </section>
      <section className="shop-page">
-    <div className="container">
+    <div className="container reveal fade-bottom">
     <div className="shop-category">
         <h3>Most Selling Products</h3>
         <div className="best-grid">

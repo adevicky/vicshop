@@ -24,10 +24,10 @@ render(): ReactNode {
   return (
     <>
 <section className="category">
-    <div className="container shop-category">
+    <div className="container  shop-category">
 <h3>Shop our top categories</h3>
-<div className="shop-category-grid">
-    <div className="category-img-wrapper">
+<div className="shop-category-grid reveal fade-left">
+    <div className="category-img-wrapper ">
         <div className="zoom-effect">
             <div className="image-card">
         <img src={Item1} alt="" />

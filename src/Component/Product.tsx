@@ -22,10 +22,10 @@ render(): ReactNode {
     <>  
 
 <section className="trending">
-        <div className="container trending-page">
+        <div className="container reveal fade-left trending-page">
             <h3>Trending products For You! </h3>
             <div className="trend-grid">
-                <div className="trend-wrapper">
+                <div className="trend-wrapper ">
                     <img src={Accessories13} alt="" />
                     <div className="trend-txt">
                     <div className="trend-name">

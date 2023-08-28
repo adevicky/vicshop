@@ -25,7 +25,7 @@ render(): ReactNode {
   return (
     <>
    <section id="footer">
-<div className="container reveal fade-left footer-page">
+<div className="container">
     <div className="footer-wrapper">
         <div className="footer-grid">
             <div>
@@ -81,7 +81,7 @@ render(): ReactNode {
     </div>
 </div>
 <hr />
-<footer className="footer-design reveal fade-bottom">
+<footer className="footer-design">
     <div className="container social-links">
         <a href="https://www.github.com/adevicky" target="_blank" title="Adenuga Victoria-Github profile"><i
                 className="fab fa-github"></i></a>

@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 import Accessories13 from '../Assets/accessories (13).png';
 import Best1 from '../Assets/accessories (9).png';
 import Best2 from '../Assets/accessories (6).png';
@@ -170,7 +171,7 @@ render(): ReactNode {
                         <span className="rating-star"><i className="fa fa-star"></i></span>
                         <span className="rating-star"><i className="fa fa-star"></i></span> &nbsp;(121)
                     </div>
-                    <div className="best-btn"><a href="#">Add to Cart</a></div>
+                    <div className="best-btn"> <link rel="stylesheet" href="/" /><a href="#">Add to Cart</a></div>
                 </div>
             </div>
             <div className="best-img-wrapper">

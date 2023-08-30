@@ -1080,10 +1080,6 @@ footer {
 .footer-page {
   margin-top: 40px;
 }
-.footer-page .footer-wrapper {
-  text-align: left;
-}
-
 .footer-page .footer-wrapper h3 {
   text-align: left;
   font-size: 14px;
@@ -1112,9 +1108,7 @@ footer {
 }
 
 .footer-page .footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   display: flex;
 }
 .footer-design {
   margin-top: 20px;

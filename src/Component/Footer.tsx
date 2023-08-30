@@ -25,7 +25,7 @@ render(): ReactNode {
   return (
     <>
    <section id="footer">
-<div className="container">
+<div className="container reveal fade-left foot-page">
     <div className="footer-wrapper">
         <div className="footer-grid">
             <div>

@@ -215,7 +215,7 @@ h3 {
   right: 0;
   background-color: #013D29;
   width: 180px;
-  height: 180px;
+  height: 380px;
   margin-top: 40px;
   transition: all 0.3ms ease-in-out;
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -224,8 +224,10 @@ h3 {
 .mobile-menu a {
   text-transform: capitalize;
   text-decoration: none;
+  text-align: left;
   line-height: 1.5;
   color: #fff;
+  padding: 10px;
 }
 
 .mobile-menu ul {

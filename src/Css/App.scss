@@ -40,6 +40,9 @@ header {
 section {
   padding: 20px 0px;
 }
+li {
+  list-style: none;
+}
 .wrapper .first-heading {
   text-align: center;
   padding: 5px 20px;
@@ -1105,17 +1108,14 @@ footer {
   font-size: 14px;
   font-family: var(--sub-heading-font);
 }
-
 .footer-page .footer-wrapper p {
   font-size: 12px;
   font-family: var(--sub-heading-font-1);
 }
-
 .footer-page .footer-wrapper a {
   text-decoration: none;
   color: #212121;
 }
-
 .footer-page .footer-wrapper li {
   list-style: none;
   padding: 10px 2px;

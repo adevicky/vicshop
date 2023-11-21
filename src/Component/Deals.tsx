@@ -51,10 +51,9 @@ render(): ReactNode {
             <div className="deal-img-wrapper">
                 <div className="zoom-effect">
                     <div className="image-card">
-                        <img src={Accessories8} alt="Water Bottle" />
+                        <img src={Accessories8} alt="Water Can" />
                     </div>
                 </div>
-                <span className="fav"><i className="fa fa-heart"></i></span>
                 <div className="best-txt">
                     <h3>homepod mini &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
                             className="best-left"><sup>$</sup>239<sup>.00</sup></span></h3>
@@ -75,7 +74,6 @@ render(): ReactNode {
                         <img src={Accessories12} alt="Snickers" />
                     </div>
                 </div>
-                <span className="fav"><i className="fa fa-heart"></i></span>
                 <div className="best-txt">
                     <h3>homepod mini &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
                             className="best-left"><sup>$</sup>239<sup>.00</sup></span>
@@ -97,7 +95,6 @@ render(): ReactNode {
                         <img src={Item9} alt="Headphones" />
                     </div>
                 </div>
-                <span className="fav"><i className="fa fa-heart"></i></span>
                 <div className="best-txt">
                     <h3>homepod mini &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
                             className="best-left"><sup>$</sup>239<sup>.00</sup></span>
@@ -119,7 +116,6 @@ render(): ReactNode {
                         <img src={Item8} alt="Laptop " />
                     </div>
                 </div>
-                <span className="fav"><i className="fa fa-heart"></i></span>
                 <div className="best-txt">
                     <h3>homepod mini &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
                             className="best-left"><sup>$</sup>239<sup>.00</sup></span>
@@ -141,7 +137,6 @@ render(): ReactNode {
                         <img src={MiniWatch} alt="MiniWatch" />
                     </div>
                 </div>
-                <span className="fav"><i className="fa fa-heart"></i></span>
                 <div className="best-txt">
                     <h3>homepod mini &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
                             className="best-left"><sup>$</sup>239<sup>.00</sup></span>

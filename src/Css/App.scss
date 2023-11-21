@@ -215,19 +215,15 @@ h3 {
   right: 0;
   background-color: #013D29;
   width: 180px;
-  height: 380px;
+  height: 450px;
   margin-top: 40px;
   transition: all 0.3ms ease-in-out;
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
 .mobile-menu a {
-  text-transform: capitalize;
-  text-decoration: none;
-  text-align: left;
-  line-height: 1.5;
-  color: #fff;
-  padding: 10px;
+text-align: left;
+padding: 0;
 }
 
 .mobile-menu ul {
@@ -815,11 +811,13 @@ h3 {
   padding: 20px 10px;
 }
 .deal-grid-wrapper {
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
+  padding: 1rem;
 }
+
 .deal-grid-wrapper img {
 background-color: var(--branding-color-3);
 border-radius: 10px;
@@ -1079,8 +1077,28 @@ line-height: 1.5;
 footer {
   opacity: 0.7;
 }
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.footer-grid h3 {
+  font-size: 16px;
+  font-family: var(--heading-font);
+}
+.footer-grid li {
+  list-style: none;
+}
+.footer-grid a {
+  color: #212121;
+  font-size: 12px;
+}
+.footer-grid a:hover {
+  color: #EA4335;
+}
 .footer-page {
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 .footer-page .footer-wrapper h3 {
   text-align: left;
@@ -1107,10 +1125,6 @@ footer {
 
 .footer-page .footer-wrapper a:hover {
   color: #961f1f;
-}
-
-.footer-page .footer-grid {
-   display: flex;
 }
 .footer-design {
   margin-top: 20px;
@@ -1186,5 +1200,5 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-       
+ 
 }
